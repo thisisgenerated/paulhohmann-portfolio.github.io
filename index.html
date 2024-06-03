@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Paul Hohmann</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a 
+          >PH.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projekte</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Moin, mein Name ist <span class="about__name">Paul Hohmann.</span></h1>
+        <h2 class="about__role">Frisch ausgebildeter IT-Systemelektroniker</h2>
+        <p class="about__desc">
+          Kreativität und Spaß stehen bei mir an erster Stelle. Ich würde mich selbst als einen guten Problemlöser beschreiben. Ich habe in meiner Ausbildung viel gelernt, eigne mir aber auch Sachen selbst gerne an. Solange ich damit ein Problem lösen kann, lasse ich mich gerne auf jedes Tool ein. 
+        </p>
+
+        <div class="about__contact center">
+          <a href="../cleanfolio-minimal-main/pdf/lebenslauf.pdf"
+          target="_blank">
+            <span class="btn btn--outline">Lebenslauf</span>
+          
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projekte</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Home-Server für selfhosted Smarthome/Cloud/PW-Manager Lösung</h3>
+            <p class="project__description">
+              Ein privates Projekt womit ich viel über Netzwerke, Virtualisierungen und die Welt der Server lernen konnte. Über Docker sind hier mehrere Tools wie Home-Assistant, Nextcloud, Bitwarden und ein Pi-Hole installiert. Der Server läuft auf einem alten Office-PC von Ebay. 
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Linux</li>
+              <li class="project__stack-item">Networking</li>
+              <li class="project__stack-item">Docker</li>
+            </ul>
+
+            
+          </div>
+
+          <div class="project">
+            <h3>Abschlussprojekt für die Ausbildung</h3>
+            <p class="project__description">
+              Eine Lösung für ein automatisches Schadenserfassungsystem im Wareneingang der Acer Computer GmbH. Mit einer Kamera können so über Knopfdruck Kundengeräte fotografiert und auf einen File-Server hochgeladen werden. Das Projekt basiert auf einem Raspberry Pi und Python.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Raspberry Pi</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Projektmanagment</li>
+            </ul>
+
+            <a
+              href="../cleanfolio-minimal-main/pdf/Projektdoku.pdf"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Website für ein Fotografie Portfolio</h3>
+            <p class="project__description">
+              Mein erste Begegnung mit Webdevelopment. Ich wollte es einfach mal ausprobieren und habe mir so ein kleines Portfolio für meine Fotos gebaut.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Hardware</li>
+          <li class="skills__list-item btn btn--plain">Windows</li>
+          <li class="skills__list-item btn btn--plain">MacOS</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">Netzwerktechnik</li>
+          <li class="skills__list-item btn btn--plain">Virtualisierung</li>
+          <li class="skills__list-item btn btn--plain">First-Level-Support</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Powershell</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Kontact</h2>
+        <a href="mailto:paulhohmann.ph@outlook.de">
+          <span class="btn btn--outline">Email</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+       
+      >
+        Created by Paul Hohmann with a template from Raj Shekhar
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
